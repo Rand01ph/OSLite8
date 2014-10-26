@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE8E7AA419FCCFCF0049B6D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8E7AA319FCCFCF0049B6D6 /* Foundation.framework */; };
+		FE8E7AA619FCCFCF0049B6D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8E7AA519FCCFCF0049B6D6 /* UIKit.framework */; };
+		FE8E7AA819FCCFCF0049B6D6 /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8E7AA719FCCFCF0049B6D6 /* Preferences.framework */; };
+		FE8E7AB219FCCFCF0049B6D6 /* OSLite8Controller.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8E7AB119FCCFCF0049B6D6 /* OSLite8Controller.h */; };
+		FE8E7AB419FCCFCF0049B6D6 /* OSLite8Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8E7AB319FCCFCF0049B6D6 /* OSLite8Controller.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		FE8E7ADE19FCD3000049B6D6 /* ProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8E7ADC19FCD3000049B6D6 /* ProgressHUD.h */; };
+		FE8E7ADF19FCD3000049B6D6 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8E7ADD19FCD3000049B6D6 /* ProgressHUD.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		FE8E7AE119FCD31A0049B6D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8E7AE019FCD31A0049B6D6 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FE8E7AA019FCCFCF0049B6D6 /* OSLite8.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSLite8.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8E7AA319FCCFCF0049B6D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FE8E7AA519FCCFCF0049B6D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FE8E7AA719FCCFCF0049B6D6 /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = Library/Frameworks/Preferences.framework; sourceTree = DEVELOPER_DIR; };
+		FE8E7AAC19FCCFCF0049B6D6 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		FE8E7AAD19FCCFCF0049B6D6 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		FE8E7AAF19FCCFCF0049B6D6 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		FE8E7AB019FCCFCF0049B6D6 /* OSLite8-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OSLite8-Info.plist"; sourceTree = "<group>"; };
+		FE8E7AB119FCCFCF0049B6D6 /* OSLite8Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSLite8Controller.h; sourceTree = "<group>"; };
+		FE8E7AB319FCCFCF0049B6D6 /* OSLite8Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSLite8Controller.m; sourceTree = "<group>"; };
+		FE8E7AB819FCCFCF0049B6D6 /* OSLite8.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = OSLite8.plist; path = Package/Library/PreferenceLoader/Preferences/OSLite8.plist; sourceTree = "<group>"; };
+		FE8E7ABC19FCCFCF0049B6D6 /* OSLite8Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OSLite8Icon.png; path = Package/Library/PreferenceBundles/OSLite8.bundle/OSLite8Icon.png; sourceTree = "<group>"; };
+		FE8E7ABD19FCCFCF0049B6D6 /* OSLite8Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OSLite8Icon@2x.png"; path = "Package/Library/PreferenceBundles/OSLite8.bundle/OSLite8Icon@2x.png"; sourceTree = "<group>"; };
+		FE8E7AC319FCCFCF0049B6D6 /* OSLite8-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OSLite8-Prefix.pch"; sourceTree = "<group>"; };
+		FE8E7AD319FCD1DC0049B6D6 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ProgressHUD.bundle; path = Package/Library/PreferenceBundles/OSLite8.bundle/ProgressHUD.bundle; sourceTree = "<group>"; };
+		FE8E7AD719FCD2060049B6D6 /* OSLite8.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = OSLite8.plist; path = Package/Library/PreferenceBundles/OSLite8.bundle/OSLite8.plist; sourceTree = "<group>"; };
+		FE8E7AD919FCD25C0049B6D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = OSLite8/Package/Library/PreferenceBundles/OSLite8.bundle/en.lproj/OSLite8.strings; sourceTree = SOURCE_ROOT; };
+		FE8E7ADB19FCD2630049B6D6 /* zh_Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_Hans; path = OSLite8/Package/Library/PreferenceBundles/OSLite8.bundle/zh_Hans.lproj/OSLite8.strings; sourceTree = SOURCE_ROOT; };
+		FE8E7ADC19FCD3000049B6D6 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		FE8E7ADD19FCD3000049B6D6 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		FE8E7AE019FCD31A0049B6D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE8E7A9C19FCCFCF0049B6D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8E7AE119FCD31A0049B6D6 /* CoreGraphics.framework in Frameworks */,
+				FE8E7AA419FCCFCF0049B6D6 /* Foundation.framework in Frameworks */,
+				FE8E7AA819FCCFCF0049B6D6 /* Preferences.framework in Frameworks */,
+				FE8E7AA619FCCFCF0049B6D6 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE8E7A9619FCCFCF0049B6D6 = {
+			isa = PBXGroup;
+			children = (
+				FE8E7AA919FCCFCF0049B6D6 /* OSLite8 */,
+				FE8E7AA219FCCFCF0049B6D6 /* Frameworks */,
+				FE8E7AA119FCCFCF0049B6D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE8E7AA119FCCFCF0049B6D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE8E7AA019FCCFCF0049B6D6 /* OSLite8.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE8E7AA219FCCFCF0049B6D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE8E7AE019FCD31A0049B6D6 /* CoreGraphics.framework */,
+				FE8E7AA319FCCFCF0049B6D6 /* Foundation.framework */,
+				FE8E7AA519FCCFCF0049B6D6 /* UIKit.framework */,
+				FE8E7AA719FCCFCF0049B6D6 /* Preferences.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE8E7AA919FCCFCF0049B6D6 /* OSLite8 */ = {
+			isa = PBXGroup;
+			children = (
+				FE8E7AB119FCCFCF0049B6D6 /* OSLite8Controller.h */,
+				FE8E7AB319FCCFCF0049B6D6 /* OSLite8Controller.m */,
+				FE8E7ADC19FCD3000049B6D6 /* ProgressHUD.h */,
+				FE8E7ADD19FCD3000049B6D6 /* ProgressHUD.m */,
+				FE8E7AAA19FCCFCF0049B6D6 /* Package */,
+				FE8E7AAE19FCCFCF0049B6D6 /* Supporting Files */,
+			);
+			path = OSLite8;
+			sourceTree = "<group>";
+		};
+		FE8E7AAA19FCCFCF0049B6D6 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				FE8E7AAB19FCCFCF0049B6D6 /* DEBIAN */,
+				FE8E7AB519FCCFCF0049B6D6 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		FE8E7AAB19FCCFCF0049B6D6 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				FE8E7AAC19FCCFCF0049B6D6 /* control.txt */,
+				FE8E7AAD19FCCFCF0049B6D6 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		FE8E7AAE19FCCFCF0049B6D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE8E7AAF19FCCFCF0049B6D6 /* PackageVersion.plist */,
+				FE8E7AB019FCCFCF0049B6D6 /* OSLite8-Info.plist */,
+				FE8E7AC319FCCFCF0049B6D6 /* OSLite8-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE8E7AB519FCCFCF0049B6D6 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				FE8E7AB619FCCFCF0049B6D6 /* PreferenceLoader */,
+				FE8E7AB919FCCFCF0049B6D6 /* PreferenceBundles */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		FE8E7AB619FCCFCF0049B6D6 /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				FE8E7AB719FCCFCF0049B6D6 /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		FE8E7AB719FCCFCF0049B6D6 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				FE8E7AB819FCCFCF0049B6D6 /* OSLite8.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		FE8E7AB919FCCFCF0049B6D6 /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+				FE8E7ABA19FCCFCF0049B6D6 /* ___PACKAGENAME___.bundle */,
+			);
+			name = PreferenceBundles;
+			sourceTree = "<group>";
+		};
+		FE8E7ABA19FCCFCF0049B6D6 /* ___PACKAGENAME___.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				FE8E7AD719FCD2060049B6D6 /* OSLite8.plist */,
+				FE8E7AD319FCD1DC0049B6D6 /* ProgressHUD.bundle */,
+				FE8E7ABC19FCCFCF0049B6D6 /* OSLite8Icon.png */,
+				FE8E7ABD19FCCFCF0049B6D6 /* OSLite8Icon@2x.png */,
+				FE8E7AC919FCD1910049B6D6 /* en.lproj */,
+				FE8E7ACD19FCD1910049B6D6 /* zh_Hans.lproj */,
+			);
+			name = "___PACKAGENAME___.bundle";
+			sourceTree = "<group>";
+		};
+		FE8E7AC919FCD1910049B6D6 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				FE8E7AD819FCD25C0049B6D6 /* OSLite8.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		FE8E7ACD19FCD1910049B6D6 /* zh_Hans.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				FE8E7ADA19FCD2630049B6D6 /* OSLite8.strings */,
+			);
+			path = zh_Hans.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FE8E7A9D19FCCFCF0049B6D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8E7AB219FCCFCF0049B6D6 /* OSLite8Controller.h in Headers */,
+				FE8E7ADE19FCD3000049B6D6 /* ProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FE8E7A9F19FCCFCF0049B6D6 /* OSLite8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE8E7AC619FCCFCF0049B6D6 /* Build configuration list for PBXNativeTarget "OSLite8" */;
+			buildPhases = (
+				FE8E7A9B19FCCFCF0049B6D6 /* Sources */,
+				FE8E7A9C19FCCFCF0049B6D6 /* Frameworks */,
+				FE8E7A9D19FCCFCF0049B6D6 /* Headers */,
+				FE8E7A9E19FCCFCF0049B6D6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSLite8;
+			productName = OSLite8;
+			productReference = FE8E7AA019FCCFCF0049B6D6 /* OSLite8.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE8E7A9719FCCFCF0049B6D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				TargetAttributes = {
+					FE8E7A9F19FCCFCF0049B6D6 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = FE8E7A9A19FCCFCF0049B6D6 /* Build configuration list for PBXProject "OSLite8" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				zh_Hans,
+			);
+			mainGroup = FE8E7A9619FCCFCF0049B6D6;
+			productRefGroup = FE8E7AA119FCCFCF0049B6D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE8E7A9F19FCCFCF0049B6D6 /* OSLite8 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FE8E7A9E19FCCFCF0049B6D6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE8E7A9B19FCCFCF0049B6D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8E7ADF19FCD3000049B6D6 /* ProgressHUD.m in Sources */,
+				FE8E7AB419FCCFCF0049B6D6 /* OSLite8Controller.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE8E7AD819FCD25C0049B6D6 /* OSLite8.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE8E7AD919FCD25C0049B6D6 /* en */,
+			);
+			name = OSLite8.strings;
+			sourceTree = "<group>";
+		};
+		FE8E7ADA19FCD2630049B6D6 /* OSLite8.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE8E7ADB19FCD2630049B6D6 /* zh_Hans */,
+			);
+			name = OSLite8.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE8E7AC419FCCFCF0049B6D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		FE8E7AC519FCCFCF0049B6D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		FE8E7AC719FCCFCF0049B6D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSLite8/OSLite8-Prefix.pch";
+				INFOPLIST_FILE = "OSLite8/OSLite8-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		FE8E7AC819FCCFCF0049B6D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSLite8/OSLite8-Prefix.pch";
+				INFOPLIST_FILE = "OSLite8/OSLite8-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE8E7A9A19FCCFCF0049B6D6 /* Build configuration list for PBXProject "OSLite8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8E7AC419FCCFCF0049B6D6 /* Debug */,
+				FE8E7AC519FCCFCF0049B6D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE8E7AC619FCCFCF0049B6D6 /* Build configuration list for PBXNativeTarget "OSLite8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8E7AC719FCCFCF0049B6D6 /* Debug */,
+				FE8E7AC819FCCFCF0049B6D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE8E7A9719FCCFCF0049B6D6 /* Project object */;
+}

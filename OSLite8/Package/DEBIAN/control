@@ -1,0 +1,17 @@
+Package: com.0xBBC.OSLite8
+Name: OSLite8
+Version: 1.0
+Description: 
+Section: PreferenceBundles
+Depends: firmware (>= 8.0), mobilesubstrate, preferenceloader
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: BlueCocoa
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: 
+Icon: 
+

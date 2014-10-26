@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>OSLite8</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>OSLite</string>
+			<key>footerText</key>
+			<string>FOOTER</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Clean Tmp</string>
+			<key>action</key>
+			<string>Clean_tmp:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Clean Caches</string>
+			<key>action</key>
+			<string>Clean_Cache:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Clean Artwork</string>
+			<key>action</key>
+			<string>Clean_Artwork:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Clean All</string>
+			<key>action</key>
+			<string>Clean_All:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Don_t Clean</string>
+			<key>footerText</key>
+			<string>EASYCLEANFOOTER</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>Dont_Clean:</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Don_t Clean</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Extra</string>
+			<key>footerText</key>
+			<string>EXTRAFOOTER</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Clean Inboxes</string>
+			<key>action</key>
+			<string>Clean_Inboxes:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Clean SafeHarbor</string>
+			<key>action</key>
+			<string>Clean_SafeHarbor:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Clean Safari Downloads</string>
+			<key>action</key>
+			<string>Clean_Safari_Downloads:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Clean All Extra</string>
+			<key>action</key>
+			<string>Clean_All_Extra:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string>Deeper</string>
+			<key>footerText</key>
+			<string>DEEPERFOOTER</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Reset Applications</string>
+			<key>action</key>
+			<string>ResetApplications:</string>
+		</dict>
+		<dict>
+			<key>footerText</key>
+			<string>© 2014 BlueCocoa</string>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<true/>
+			<key>label</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
+</plist>

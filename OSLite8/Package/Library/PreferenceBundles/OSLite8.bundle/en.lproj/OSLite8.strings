@@ -1,0 +1,14 @@
+"Clean All" = "Clean All Above";
+"Clean Artwork" = "Clean Artwork File";
+"Clean Caches" = "Clean Caches Folders";
+"Clean Done!" = "Clean Done!";
+"Clean Tmp" = "Clean Temp Folders";
+"Don_t Clean" = "Do NOT Clean";
+"EASYCLEAN" = "Clean";
+"EASYCLEANFOOTER" = "The item **WITH** a checkmark will **NOT** be cleaned. tmp and Caches folders are folders which their application use store some temporary files";
+"FOOTER" = "If there are too many trashs in your application's folder, you might wait a few seconds for OSLite to clean them.";
+"OK" = "OK";
+"EXTRAFOOTER" = "Inboxes folder is used to contain files when your device received files from Web or applications.(This Inboxes folder is the system level, not each app's) SafeHarbor folder is used to save your previous app data when you restore your device from iTunes or iCloud.";
+"Extra" = "Extra";
+"Deeper" = "Deeper";
+"DEEPERFOOTER" = "About 'Reset Applications'. Now you can reset your apps just like you installed them one second ago. The item WITH a checkmark ***WILL*** be reset.";
